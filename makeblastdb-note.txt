@@ -1,0 +1,1 @@
+makeblastdb -in <> -dbtype nucl -out <folder_db/fasta_input_species_name>
