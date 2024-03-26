@@ -1,0 +1,1 @@
+blastdb_aliastool -dblist 'db/apis-mellifera bombus/bombus' -dbtype nucl -title current -out current/current
