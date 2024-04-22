@@ -31,21 +31,23 @@ def get_tblastx_match_SeqIO_records(pyfaidx_genome,tblastx_content):
     records = []
     current_seq = ''
     file_name = pyfaidx_genome.filename.split('/')[-1]
-    genome_version = '_'.join(file_name.split('_')[2:4])
+    genome_version = pyfaidx_genome[0].long_name.split(',')[1].split()[0]
     for match in tblastx_content:
         landmark = match[0]
         start = int(match[6])
         end = int(match[7])
+        subject_id = match[1]
+        p = subject_id.split('=')[-1]
         # pyfaidx slicing: start is not included but end is -> need to subract 1 from start to include
         if end < start:
-            current_seq = pyfaidx_genome[landmark][end-1:start].reverse.seq
-            header = f'{landmark}_start:{end}_end:{start}_(-)'
-            record = SeqRecord(Seq(current_seq),id=header,description=f'Genome: {genome_version}')
+            current_seq = pyfaidx_genome[landmark][end-1:start].seq
+            header = f'{landmark}_start:{end}_end:{start}_(-)_aligned:{p}'
+            record = SeqRecord(Seq(current_seq),id=header, description='')
             records.append(record)
         else:
             current_seq = pyfaidx_genome[landmark][start-1:end].seq
-            header = f'{landmark}_start:{start}_end:{end}_(+)'
-            record = SeqRecord(Seq(current_seq),id=header,description=f'Genome: {genome_version}')
+            header = f'{landmark}_start:{start}_end:{end}_(+)_aligned:{p}'
+            record = SeqRecord(Seq(current_seq),id=header, description='')
             records.append(record)
 
     return records

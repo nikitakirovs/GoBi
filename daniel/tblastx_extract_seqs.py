@@ -13,7 +13,8 @@ if __name__ == '__main__':
     genome_path = args.genome
 
     tblastx_content = read_blast_results_to_list(blast_results)
+    # get pyfaidx genome
     genome = Fasta(genome_path)
 
-    records =  get_tblastx_match_SeqIO_records(genome,tblastx_content)
+    records = get_tblastx_match_SeqIO_records(genome,tblastx_content)
     write_to_fasta(records, args.output)
