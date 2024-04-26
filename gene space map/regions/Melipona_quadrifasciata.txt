@@ -1,0 +1,6 @@
+1	"117"	"landmark:NC_037648.1_ID:cds-XP_006558993.1_start:2340294_end:2341234_strand:(+) product=yellow-h isoform X2;from Amel_HAv3.1"	"0"	"n/a"		2134303	2133365
+356	"11"	"landmark:NC_037648.1_ID:cds-XP_006559008.1_start:2251644_end:2252141_strand:(+) product=protein yellow;from Amel_HAv3.1"	"8.3281E-92"	"n/a"	2160421	2159933
+357	"6"	"landmark:NC_037648.1_ID:cds-XP_003249426.1_start:2251644_end:2252141_strand:(+) product=protein yellow;from Amel_HAv3.1"	"8.3281E-92"	"n/a"	2160421	2159933
+232	"5"	"landmark:NC_037648.1_ID:cds-XP_006559006.1_start:2238814_end:2239440_strand:(+) product=protein yellow;from Amel_HAv3.1"	"3.054E-114"	"n/a"	2170728	2170279
+2	"113"	"landmark:NC_037648.1_ID:cds-NP_001091687.1_start:2340294_end:2341234_strand:(+) gbkey=CDS;from Amel_HAv3.1"	"0"	"n/a"		2134303	2133365
+436	"19"	"landmark:NC_037648.1_ID:cds-XP_006558991.2_start:2263056_end:2263519_strand:(+) product=yellow-e3 isoform X1;from Amel_HAv3.1"	"4.7801E-81"	"n/a"	2152302	2151841

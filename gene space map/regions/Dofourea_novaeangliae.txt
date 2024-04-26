@@ -1,0 +1,2 @@
+2	"113"	"landmark:NC_037648.1_ID:cds-NP_001091687.1_start:2340294_end:2341234_strand:(+) gbkey=CDS;from Amel_HAv3.1"			"0"		"n/a"	113789	112851
+17	"113"	"landmark:NC_037648.1_ID:cds-NP_001091687.1_start:2340294_end:2341234_strand:(+) gbkey=CDS;from Amel_HAv3.1"			"3.0246E-30"	"n/a"	216250	215918

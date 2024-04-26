@@ -1,0 +1,2 @@
+37	"117"	"landmark:NC_037648.1_ID:cds-XP_006558993.1_start:2340294_end:2341234_strand:(+) product=yellow-h isoform X2;from Amel_HAv3.1"	"1.8838E-69"	"n/a"	66177221	66176982
+238	"5"	"landmark:NC_037648.1_ID:cds-XP_006559006.1_start:2238814_end:2239440_strand:(+) product=protein yellow;from Amel_HAv3.1"	"6.3635E-52"	"n/a"	66275674	66276673
