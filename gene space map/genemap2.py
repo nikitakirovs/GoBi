@@ -2,6 +2,7 @@ import numpy as np
 import csv
 import glob
 
+# gaps between the cds and their colors are defined according to the genemap.png
 unique_genome = []
 gaps = [
     [6, 11, 57, 0],
@@ -12,7 +13,6 @@ gaps = [
     [1, 0, 0],
     [1, 0, 0]
 ]
-
 matrix_colors = [
     [0, 800, 800, 3400, 3400, 3700],
     [2900, 3700, 300, 2900, 0, 300],
@@ -38,6 +38,7 @@ with open('regions/Nasonia_vitripennis.txt', mode ='r')as file:
       new_row = np.array([genome, start, end])
       matrix = np.vstack([matrix, new_row])
 
+# get all the regions of all other species
 files = glob.glob("regions/*.txt")
 for file in files:
     with open(file, mode='r') as file:
