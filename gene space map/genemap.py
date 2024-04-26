@@ -19,6 +19,7 @@ with open('regions/Apis-Mellifera-cds-reduced.fasta') as f:
 unique_genome = []
 matrix = np.array([1, 2, 3])
 
+#read the txt files with the filtered data from blast results
 files = glob.glob("regions/*.txt")
 for file in files:
     with open(file, mode='r') as file:
@@ -34,9 +35,7 @@ for file in files:
             new_row = np.array([genome, start, end])
             matrix = np.vstack([matrix, new_row])
 
-
-
-# for fasta files
+#reform the data and prepare them for pyGenomeVis
 key_list = list(motifs.keys())
 val_list = list(motifs.values())
 Apis_matrix = np.array([1, 2, 3, 4])
@@ -50,6 +49,7 @@ for i in range(len(motifs)):
     new_row = np.array([genome, start, end, product])
     Apis_matrix = np.vstack([Apis_matrix, new_row])
 
+# get all the rows from the same genome
 def filter_rows_with_same_first_element(element, matrix):
     filtered_rows = []
     for row in matrix:
@@ -57,6 +57,7 @@ def filter_rows_with_same_first_element(element, matrix):
             filtered_rows.append(row)
     return filtered_rows
 
+# get the list of cds, containing their start and end positions
 def get_genes_list(element, matrix, number):
     same_first_element_rows = filter_rows_with_same_first_element(element, matrix)
     list_of_genes = ()
@@ -77,6 +78,7 @@ def get_genes_list(element, matrix, number):
 
 genome_list = [{1:100}]
 
+# draw all the cds on the gene space map
 new_line = {"name": "Apis mellifera", "size": 123000, "cds_list": get_genes_list("Apis mellifera", Apis_matrix, 6)}
 genome_list.append(new_line)
 
@@ -87,8 +89,9 @@ for genes in unique_genome:
     number = number + 1
 
 from pygenomeviz import GenomeViz
-
 gv = GenomeViz(fig_track_height = 0.5)
+
+# color the yellow genes, mrjps and yellow-h cds with three colors
 colors = ("skyblue", "tomato", "green")
 matrix_colors = [
     [0, 20, 20, 102, 103, 120],
@@ -99,7 +102,6 @@ matrix_colors = [
     [60, 120, 26, 60, 0, 25],
     [40, 120, 0, 0, 0, 40]
 ]
-
 
 for i in range(1, len(genome_list)):
     name, size, cds_list = genome_list[i].get("name"), genome_list[i].get("size"), genome_list[i].get("cds_list")
