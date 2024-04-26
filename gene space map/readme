@@ -1,1 +1,6 @@
+Hits found by blast were filtered and only those with lower E-values were kept in the data.
 
+https://github.com/moshi4/pyGenomeViz
+The python package pyGenomeViz was used to make the gene space map and two versions of gene space map were created.
+Gene space map 1 took the length of each cds and their exact positions on the Genome into consideration with the scale on the x-axis.
+Gene space map 2 ignored the scale. All the cds were presented by triangles of the same length and with same size of gaps for a better visualization.
