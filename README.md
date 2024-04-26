@@ -1,11 +1,16 @@
 # Repository of the paper "Exploring the phylogeny of the mrjps and the yellow gene family"
 
 **Extraction of species**
+
+Run the script process_species_file.sh as following: 
+
 ```shell
 
-cd somwhere_for_example
+./process_species_file.sh species_names.txt
 
 ```
+
+species_name.txt represents the list of species. #### here change! 
 
 
 
