@@ -1,4 +1,4 @@
-Hits found by blast were filtered and only those with lower E-values were kept in the data.
+Hits found by blast were filtered and only those with lower E-values were kept in the data in regions/.
 
 https://github.com/moshi4/pyGenomeViz
 The python package pyGenomeViz was used to make the gene space map and two versions of gene space map were created.
