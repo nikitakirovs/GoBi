@@ -4,3 +4,10 @@ https://github.com/moshi4/pyGenomeViz
 The python package pyGenomeViz was used to make the gene space map and two versions of gene space map were created.
 Gene space map 1 took the length of each cds and their exact positions on the Genome into consideration with the scale on the x-axis.
 Gene space map 2 ignored the scale. All the cds were presented by triangles of the same length and with same size of gaps for a better visualization.
+
+The program is not good enough because the classification of cds must be done by hand. Possible improvement could be: the program reads from the data 
+every cds and their pairwise corresponding cds from the template genome of Apis mellifera, stores it and colors it automatic depending on which group 
+it belongs to.
+
+Also, the cds found by Blastn were not complete. Hits of mrjp3, mrjp6, mrjp7 were not gained, thus not shown on the genome. And despite yellow-e3, yellow-h 
+and mrjp1, other cds were only roughly categorized into a yellow gourp or mrjp gourp.
