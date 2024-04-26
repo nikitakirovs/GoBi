@@ -2,12 +2,11 @@ import numpy as np
 import csv
 import glob
 
-
+#length of the regions which come before the cds of our interests on the genome
 pre_length = (5760000, 100000, 230000, 2100000, 4660000, 66160000, 2230000)
 
-
 motifs = dict()
-#read fasta file and create gene map based on it
+#read fasta file of Apis mellifera and create the first row of gene map based on it
 with open('regions/Apis-Mellifera-cds-reduced.fasta') as f:
     lines = f.readlines()
     for i in range(0, len(lines)):
