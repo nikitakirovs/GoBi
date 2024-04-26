@@ -61,6 +61,7 @@ def filter_rows_with_same_first_element(element, matrix):
             filtered_rows.append(row)
     return filtered_rows
 
+# the real length of cds and their gaps are ignored
 def get_genes_list(element, matrix, number):
     k = 0
     same_first_element_rows = filter_rows_with_same_first_element(element, matrix)
@@ -89,9 +90,7 @@ def get_genes_list(element, matrix, number):
 
 genome_list = [{1:100}]
 
-import matplotlib.colors as colors
-colors_list = list(colors._colors_full_map.values())
-
+# change the order of rows so that genomes with similar cds structures are placed next to each other
 number = 0
 myorder = [0, 5, 1, 3, 4, 6, 2]
 unique_genome = [unique_genome[i] for i in myorder]
