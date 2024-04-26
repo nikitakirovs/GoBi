@@ -1,7 +1,7 @@
 instead of updating the blast db each time we add sequences we 
 can simply create a new database for each organism/species and 
 then use an alias db to 'combine' them. 
-Like that we preserve more struckture.
+Like that we preserve more structure.
 
 blastdb_aliastool -dbtype <type> -dblist "<db1> <db2> <db3>" -out <alias_name>
 
