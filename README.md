@@ -14,7 +14,7 @@ The script creates directories with data files, that where found by searching wi
   
 #### Restriction of species list: 
 
-The species_list is .txt based file, which includes all the species that are being analyzed in the paper with their full latin name. The names are seperated by a newline (\n).
+The species_list is a .txt file containing the complete Latin names of all species analyzed in the paper. Each name is separated by a newline (\n).  
 
 Example: 
 
