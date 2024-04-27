@@ -1,0 +1,16 @@
+Drosophila melanogaster
+Apis mellifera
+Tribolium castaneum
+Nasonia vitripennis
+Bombyx mori
+Heliconius erato
+Acyrthosiphon pisum
+Atta cephalotes
+Exoneura robusta
+Melipona quadrifasciata
+Dufourea novaeangliae
+Lepisma saccharina
+Aeshna juncea
+Pantala flavescens 
+Anax junius
+Leptinotarsa decemlineata
