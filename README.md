@@ -1,6 +1,6 @@
 # Repository of the paper "Exploring the phylogeny of the mrjps and the yellow gene family"
 
-**Extraction of species**
+## Extraction of species
 
 Run the script process_species_file.sh as following: 
 
@@ -12,13 +12,23 @@ Run the script process_species_file.sh as following:
 The script expects a species_list as input.  
 The script creates directories with data files, that where found by searching with the species name and taking the first entry with the NCBI Datasets command-line tool. Therefore the package has to be installed in the environment. (see https://www.ncbi.nlm.nih.gov/datasets/docs/v2/download-and-install/)  
   
-### Restriction of species list: 
+#### Restriction of species list: 
+
+The species_list is .txt based file, which includes all the species that are being analyzed in the paper with their full latin name. The names are seperated by a newline (\n).
+
+Example: 
+
+```shell
+Apis mellifera
+Drosophila melanogaster
+Bombyx mori
+etc. 
+
+```
 
 
 
-
-
-**Running the blast pipeline**
+## Running the blast pipeline
 
 ```shell
 
