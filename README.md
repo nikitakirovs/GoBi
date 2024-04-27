@@ -23,7 +23,7 @@ python pipeline.py -g <path_subdirectory> -s <path_to_species.txt> -d <output_di
 
 ```
 Explanation to options: 
--[] g: expects path to directory containing one subdirectory for each species with its genomic.fna\
+- [ ] g: expects path to directory containing one subdirectory for each species with its genomic.fna\
 -[] s: expects path to the species.txt\
 -d: directory path to save database for each species, used to create an alias database linking them together\
 -a: directory path for alias database\
