@@ -9,9 +9,12 @@ Run the script process_species_file.sh as following:
 ./process_species_file.sh species_names.txt
 
 ```
+The script expects a species_list as input.  
+The script creates directories with data files, that where found by searching with the species name and taking the first entry with the NCBI Datasets command-line tool. Therefore the package has to be installed in the environment. (see https://www.ncbi.nlm.nih.gov/datasets/docs/v2/download-and-install/)  
   
-Species_name.txt represents the list of species, that is taken as an input for the script.   
-The script creates directories with data files, that where found by searching with the species name and taking the first entry with the NCBI Datasets command-line tool. Therefore the package has to be installed in the environment. (see https://www.ncbi.nlm.nih.gov/datasets/docs/v2/download-and-install/)
+### Restriction of species list: 
+
+
 
 
 
